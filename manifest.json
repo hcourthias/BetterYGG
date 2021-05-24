@@ -28,22 +28,22 @@
     ],
     "content_scripts": [
       {
-        "matches": ["https://*.yggtorrent.si/torrent/*"],
+        "matches": ["https://*.yggtorrent.*/torrent/*"],
         "run_at": "document_idle",
         "js": ["js/utilsFunctions.js", "contentScripts/addTorrent/addTorrent.js"]
       },
       {
-        "matches": ["https://*.yggtorrent.si/"],
+        "matches": ["https://*.yggtorrent.*/"],
         "run_at": "document_idle",
         "js": [ "contentScripts/homePage.js"]
       },
       {
-        "matches": ["https://*.yggtorrent.si/*"],
+        "matches": ["https://*.yggtorrent.*/*"],
         "run_at": "document_idle",
         "js": ["js/utilsFunctions.js", "contentScripts/allPages/allPages.js"]
       },
       {
-        "matches": ["https://*.yggtorrent.si/engine/search*"],
+        "matches": ["https://*.yggtorrent.*/engine/search*"],
         "run_at": "document_idle",
         "js": ["js/utilsFunctions.js", "contentScripts/search/search.js"]
 
